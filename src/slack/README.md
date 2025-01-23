@@ -1,5 +1,7 @@
 # Slack MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/slack)](https://smithery.ai/server/@smithery-ai/slack)
+
 MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.
 
 ## Tools
@@ -133,6 +135,14 @@ Add the following to your `claude_desktop_config.json`:
     }
   }
 }
+```
+
+### Installing via Smithery
+
+To install Slack MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/slack):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/slack --client claude
 ```
 
 ### Troubleshooting
