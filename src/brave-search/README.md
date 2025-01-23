@@ -1,4 +1,5 @@
 # Brave Search MCP Server
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/brave-search-2)](https://smithery.ai/server/@smithery-ai/brave-search-2)
 
 An MCP server implementation that integrates the Brave Search API, providing both web and local search capabilities.
 
