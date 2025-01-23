@@ -1,0 +1,23 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+build:
+  dockerBuildPath: ../../
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - slackBotToken
+      - slackTeamId
+    properties:
+      slackBotToken:
+        type: string
+        description: The Bot User OAuth Token for the Slack app.
+      slackTeamId:
+        type: string
+        description: The Slack Team ID for the workspace.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['dist/index.js'], env: { SLACK_BOT_TOKEN: config.slackBotToken, SLACK_TEAM_ID: config.slackTeamId } })
