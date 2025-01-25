@@ -1,5 +1,7 @@
 # GitLab MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/gitlab)](https://smithery.ai/server/@smithery-ai/gitlab)
+
 MCP Server for the GitLab API, enabling project management, file operations, and more.
 
 ### Features
@@ -96,6 +98,14 @@ MCP Server for the GitLab API, enabling project management, file operations, and
    - Returns: Created branch reference
 
 ## Setup
+
+### Installing via Smithery
+
+To install GitLab API Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/gitlab):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/gitlab --client claude
+```
 
 ### Personal Access Token
 [Create a GitLab Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) with appropriate permissions:
