@@ -1,5 +1,7 @@
 # mcp-server-sentry: A Sentry MCP server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/sentry)](https://smithery.ai/server/@smithery-ai/sentry)
+
 ## Overview
 
 A Model Context Protocol server for retrieving and analyzing issues from Sentry.io. This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.
@@ -29,6 +31,14 @@ A Model Context Protocol server for retrieving and analyzing issues from Sentry.
    - Returns: Formatted issue details as conversation context
 
 ## Installation
+
+### Installing via Smithery
+
+To install mcp-server-sentry for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/sentry):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/sentry --client claude
+```
 
 ### Using uv (recommended)
 
