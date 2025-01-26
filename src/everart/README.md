@@ -1,8 +1,20 @@
 # EverArt MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/everart)](https://smithery.ai/server/@smithery-ai/everart)
+
 Image generation server for Claude Desktop using EverArt's API.
 
 ## Install
+
+### Installing via Smithery
+
+To install Everart for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/everart):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/everart --client claude
+```
+
+### Manual Installation
 ```bash
 npm install
 export EVERART_API_KEY=your_key_here
