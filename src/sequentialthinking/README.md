@@ -1,5 +1,5 @@
-
 # Sequential Thinking MCP Server
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/server-sequential-thinking)](https://smithery.ai/server/@smithery-ai/server-sequential-thinking)
 
 An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
 
