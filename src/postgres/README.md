@@ -1,4 +1,5 @@
 # PostgreSQL
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/postgres)](https://smithery.ai/server/@smithery-ai/postgres)
 
 A Model Context Protocol server that provides read-only access to PostgreSQL databases. This server enables LLMs to inspect database schemas and execute read-only queries.
 
