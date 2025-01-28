@@ -1,5 +1,7 @@
 # SQLite MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/sqlite)](https://smithery.ai/server/@smithery-ai/sqlite)
+
 ## Overview
 A Model Context Protocol (MCP) server implementation that provides database interaction and business intelligence capabilities through SQLite. This server enables running SQL queries, analyzing business data, and automatically generating business insight memos.
 
@@ -62,6 +64,14 @@ The server offers six core tools:
 
 
 ## Usage with Claude Desktop
+
+### Installing via Smithery
+
+To install SQLite MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/sqlite):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/sqlite --client claude
+```
 
 ### uv
 
