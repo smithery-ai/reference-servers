@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+build:
+  dockerBuildPath: ../../
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - dbPath
+    properties:
+      dbPath:
+        type: string
+        description: The file path to the SQLite database.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'docker', args: ['run', '--rm', '-i', '-v', `mcp-test:/mcp`, 'mcp/sqlite', '--db-path', config.dbPath] })
