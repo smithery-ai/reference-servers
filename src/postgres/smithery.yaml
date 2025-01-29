@@ -18,4 +18,4 @@ startCommand:
   commandFunction:
     # A function that produces the CLI command to start the MCP on stdio.
     |-
-    config => ({ command: 'node', args: ['dist/index.js'], env: { DATABASE_URL: config.postgresConnectionString } })
+    config => ({ command: 'node', args: ['dist/index.js', config.postgresConnectionString] })
