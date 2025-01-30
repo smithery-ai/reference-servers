@@ -1,4 +1,5 @@
 # Puppeteer
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/puppeteer)](https://smithery.ai/server/@smithery-ai/puppeteer)
 
 A Model Context Protocol server that provides browser automation capabilities using Puppeteer. This server enables LLMs to interact with web pages, take screenshots, and execute JavaScript in a real browser environment.
 
@@ -64,6 +65,14 @@ The server provides access to two types of resources:
 
 ## Configuration to use Puppeteer Server
 Here's the Claude Desktop configuration to use the Puppeter server:
+
+### Installing via Smithery
+
+To install Puppeteer Browser for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/puppeteer):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/puppeteer --client claude
+```
 
 ### Docker
 
