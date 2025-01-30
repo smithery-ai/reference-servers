@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+build:
+  dockerBuildPath: src/git
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - repositoryPath
+    properties:
+      repositoryPath:
+        type: string
+        description: Path to the Git repository.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    config => ({command:'python', args:['-m', 'mcp_server_git', '--repository', config.repositoryPath]})
