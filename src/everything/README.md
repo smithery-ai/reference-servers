@@ -1,5 +1,7 @@
 # Everything MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/everything)](https://smithery.ai/server/@smithery-ai/everything)
+
 This MCP server attempts to exercise all the features of the MCP protocol. It is not intended to be a useful server, but rather a test server for builders of MCP clients. It implements prompts, tools, resources, sampling, and more to showcase MCP capabilities.
 
 ## Components
@@ -79,6 +81,14 @@ Resource features:
    - Returns: Multi-turn conversation with images
 
 ## Usage with Claude Desktop
+
+### Installing via Smithery
+
+To install Everything MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/everything):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/everything --client claude
+```
 
 Add to your `claude_desktop_config.json`:
 
