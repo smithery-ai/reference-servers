@@ -1,5 +1,7 @@
 # mcp-server-git: A git MCP server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/git)](https://smithery.ai/server/@smithery-ai/git)
+
 ## Overview
 
 A Model Context Protocol server for Git repository interaction and automation. This server provides tools to read, search, and manipulate Git repositories via Large Language Models.
@@ -81,6 +83,14 @@ Please note that mcp-server-git is currently in early development. The functiona
    - Returns: Contents of the specified commit
 
 ## Installation
+
+### Installing via Smithery
+
+To install mcp-server-git for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/git):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/git --client claude
+```
 
 ### Using uv (recommended)
 
