@@ -1,5 +1,7 @@
 # Google Maps MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/google-maps)](https://smithery.ai/server/@smithery-ai/google-maps)
+
 MCP Server for the Google Maps API.
 
 ## Tools
@@ -99,6 +101,14 @@ Add the following to your `claude_desktop_config.json`:
     }
   }
 }
+```
+
+### Installing via Smithery
+
+To install Google Maps MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/google-maps):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/google-maps --client claude
 ```
 
 ## Build
