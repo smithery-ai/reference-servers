@@ -1,5 +1,7 @@
 # Google Drive server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/gdrive)](https://smithery.ai/server/@smithery-ai/gdrive)
+
 This MCP server integrates with Google Drive to allow listing, reading, and searching over files.
 
 ## Components
@@ -35,6 +37,14 @@ The server provides access to Google Drive files:
 7. Rename the key file to `gcp-oauth.keys.json` and place into the root of this repo (i.e. `servers/gcp-oauth.keys.json`)
 
 Make sure to build the server with either `npm run build` or `npm run watch`.
+
+### Installing via Smithery
+
+To install Google Drive for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/gdrive):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/gdrive --client claude
+```
 
 ### Authentication
 
