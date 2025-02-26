@@ -1,0 +1,42 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+build:
+  dockerBuildPath: ../..
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - awsAccessKeyId
+      - awsSecretAccessKey
+      - awsRegion
+    properties:
+      awsRegion:
+        type: string
+        default: us-east-1
+        description: AWS Region
+      awsAccessKeyId:
+        type: string
+        default: YOUR_ACCESS_KEY_ID
+        description: AWS Access Key ID
+      awsSecretAccessKey:
+        type: string
+        default: YOUR_SECRET_ACCESS_KEY
+        description: AWS Secret Access Key
+  exampleConfig:
+    awsRegion: us-east-1
+    awsAccessKeyId: EXAMPLE_ID
+    awsSecretAccessKey: EXAMPLE_SECRET
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/index.js'],
+      env: {
+        AWS_ACCESS_KEY_ID: config.awsAccessKeyId,
+        AWS_SECRET_ACCESS_KEY: config.awsSecretAccessKey,
+        AWS_REGION: config.awsRegion
+      }
+    })
