@@ -1,5 +1,7 @@
 # AWS Knowledge Base Retrieval MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/aws-kb-retrieval-server)](https://smithery.ai/server/@smithery-ai/aws-kb-retrieval-server)
+
 An MCP server implementation for retrieving information from the AWS Knowledge Base using the Bedrock Agent Runtime.
 
 ## Features
