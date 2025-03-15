@@ -1,4 +1,5 @@
 # Fetch MCP Server
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/fetch2)](https://smithery.ai/server/@smithery-ai/fetch2)
 
 A Model Context Protocol server that provides web content fetching capabilities. This server enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.
 
@@ -22,6 +23,14 @@ The fetch tool will truncate the response, but by using the `start_index` argume
 ## Installation
 
 Optionally: Install node.js, this will cause the fetch server to use a different HTML simplifier that is more robust.
+
+### Installing via Smithery
+
+To install Fetch Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/fetch2):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/fetch2 --client claude
+```
 
 ### Using uv (recommended)
 
