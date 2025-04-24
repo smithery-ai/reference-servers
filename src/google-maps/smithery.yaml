@@ -15,11 +15,8 @@ startCommand:
         description: Google Maps API key for accessing the API
   commandFunction: |-
     (config) => ({
-      command: 'npx',
-      args: [
-        '-y',
-        '@modelcontextprotocol/server-google-maps'
-      ],
+      command: 'node',
+      args: ['dist/index.js'],
       env: {
         GOOGLE_MAPS_API_KEY: config.googleMapsApiKey
       }
