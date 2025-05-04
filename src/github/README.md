@@ -1,5 +1,7 @@
 # GitHub MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@smithery-ai/github2)](https://smithery.ai/server/@smithery-ai/github2)
+
 MCP Server for the GitHub API, enabling file operations, repository management, search functionality, and more.
 
 ### Features
@@ -353,6 +355,14 @@ To use this with Claude Desktop, add the following to your `claude_desktop_confi
     }
   }
 }
+```
+
+### Installing via Smithery
+
+To install GitHub (Preview) for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@smithery-ai/github2):
+
+```bash
+npx -y @smithery/cli install @smithery-ai/github2 --client claude
 ```
 
 ## Build
